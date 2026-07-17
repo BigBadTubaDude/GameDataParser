@@ -13,7 +13,7 @@ namespace GameDataParser
             catch (Exception error)
             {
                 FileLogger logger = new FileLogger("log.txt");
-                logger.LogError(new Exception("wrong thing happened"));
+                logger.LogError(error);
             }
         }
     }
